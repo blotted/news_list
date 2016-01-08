@@ -10,7 +10,7 @@ class NewsDB implements INewsDB{
     const RSS_LINK = "htt://localhost/level3/news/news.php";
     
     function __get($name) {
-        if($name == "db") {
+        if($name == "_db") {
             return $this->_db;
         }
         throw new Exception("Unknown property!");
